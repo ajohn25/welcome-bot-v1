@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WelcomeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slack Welcome Bot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzA-9X-ehh">
+                                <rect key="frame" x="26" y="58" width="362" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvZ-jF-ftk">
+                                <rect key="frame" x="84" y="142" width="246" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Enter the Welcome Message you wish to use here" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sep-el-pBL">
+                                <rect key="frame" x="88" y="186" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slack Channel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rtb-6O-Crb">
+                                <rect key="frame" x="114.5" y="408" width="185" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="#sample" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h9U-EU-QN7">
+                                <rect key="frame" x="150" y="452" width="114" height="37"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuX-Pi-hWg">
+                                <rect key="frame" x="162.5" y="550" width="89" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="btnSubmitClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RDN-oq-DpB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PuX-Pi-hWg" secondAttribute="bottom" constant="265" id="5NY-KX-ty7"/>
+                            <constraint firstItem="PuX-Pi-hWg" firstAttribute="top" secondItem="h9U-EU-QN7" secondAttribute="bottom" constant="61" id="CJ8-qJ-kZG"/>
+                            <constraint firstItem="tzA-9X-ehh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="Rl5-pB-SVg"/>
+                            <constraint firstItem="Rtb-6O-Crb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WcW-C4-XXk"/>
+                            <constraint firstItem="PuX-Pi-hWg" firstAttribute="centerX" secondItem="h9U-EU-QN7" secondAttribute="centerX" id="YXY-qO-NvL"/>
+                            <constraint firstItem="h9U-EU-QN7" firstAttribute="centerX" secondItem="Rtb-6O-Crb" secondAttribute="centerX" id="eod-Jf-IrG"/>
+                            <constraint firstItem="jvZ-jF-ftk" firstAttribute="top" secondItem="tzA-9X-ehh" secondAttribute="bottom" constant="31" id="gaw-we-MQP"/>
+                            <constraint firstItem="jvZ-jF-ftk" firstAttribute="centerX" secondItem="tzA-9X-ehh" secondAttribute="centerX" id="kle-Va-j4f"/>
+                            <constraint firstItem="h9U-EU-QN7" firstAttribute="top" secondItem="Rtb-6O-Crb" secondAttribute="bottom" constant="8" symbolic="YES" id="l6K-Ba-pWD"/>
+                            <constraint firstItem="tzA-9X-ehh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="udX-V2-SU7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtChannel" destination="h9U-EU-QN7" id="aiY-PP-SUz"/>
+                        <outlet property="txtWelcomeMessage" destination="sep-el-pBL" id="dhV-hd-eL9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
